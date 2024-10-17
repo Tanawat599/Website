@@ -446,3 +446,62 @@ p {
 
 }
 
+/* สำหรับมือถือ */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* ลดขนาดฟอนต์ลง */
+    padding: 10px; /* ลดระยะห่างขอบ */
+  }
+
+  header {
+    padding: 20px; /* ลดระยะห่างของ header */
+    flex-direction: column; /* เรียงในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+  }
+
+  .profile-pic {
+    width: 100px; /* ลดขนาดรูป */
+    top: 20px;
+    left: auto;
+  }
+
+  header h1, header p {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 100%; /* ใช้พื้นที่เต็มหน้าจอ */
+    margin: 10px 0;
+  }
+
+  .skills-container {
+    flex-direction: column; /* จัดเรียงแนวตั้ง */
+    align-items: center;
+  }
+
+  .skills-category {
+    width: 100%; /* ให้เต็มพื้นที่ */
+    margin-bottom: 20px;
+  }
+
+  .grid, .grid-Awards {
+    grid-template-columns: 1fr; /* ให้คอลัมน์เดียว */
+  }
+
+  .experience-category {
+    flex: 1 1 100%; /* ให้ใช้พื้นที่เต็ม */
+  }
+
+  .button-container, .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
