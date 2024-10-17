@@ -422,7 +422,7 @@ p {
 }
 .grid-Awards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-items: stretch;
   align-items: stretch;
   column-gap: 12px;
@@ -430,7 +430,7 @@ p {
 }
 
 .content-Awards {
-
+  
   color: #242424;
   border-radius: 6px;
   background-color: #f2efef;
@@ -445,5 +445,8 @@ p {
   text-align: left;
 
 }
-
-
+@media (min-width: 1000px) { /* ปรับขนาดตามที่คุณต้องการ */
+  .grid-Awards {
+      grid-template-columns: repeat(4, 1fr); /* จำกัดจำนวนคอลัมน์ที่ 4 */
+  }
+}
