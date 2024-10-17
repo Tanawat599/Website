@@ -450,3 +450,8 @@ p {
       grid-template-columns: repeat(4, 1fr); /* จำกัดจำนวนคอลัมน์ที่ 4 */
   }
 }
+@media (max-width: 600px) {
+    .grid-Awards {
+        grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์ในขนาดหน้าจอเล็ก */
+    }
+}
