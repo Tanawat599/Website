@@ -29,7 +29,7 @@ header p {
 
 section {
 
-
+  max-width: 70%;
   background-color: #ffffff;
   padding: 20px;
   margin: 20px;
@@ -82,7 +82,7 @@ section {
   background-color: #ffffff; /* สีพื้นหลัง */
   padding: 15px; /* ระยะห่างภายใน */
   margin-bottom: 20px; /* ระยะห่างระหว่างแถว */
-  border-radius: 4px; /* มุมโค้ง */
+  border-radius: 4px; 
 }
 
 
@@ -133,7 +133,7 @@ footer a:hover {
 }
 
 .navbar a:hover {
-  color: #f0a500;
+  color: #6bb3fa;
 }
 .profile-pic {
     position: absolute;
@@ -449,9 +449,5 @@ p {
   .grid-Awards {
       grid-template-columns: repeat(4, 1fr); /* จำกัดจำนวนคอลัมน์ที่ 4 */
   }
-}
-@media (max-width: 600px) {
-    .grid-Awards {
-        grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์ในขนาดหน้าจอเล็ก */
-    }
+
 }
